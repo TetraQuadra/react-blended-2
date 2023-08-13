@@ -12,6 +12,8 @@
 
 ## Інструкція Pexels API
 
+jhbRkdqzOPmcjtZBGhZUqrtjtFxTLfb3zOanDjdrZ5sMQAPxwPLs1OSN
+
 Для HTTP-запитів використовуй публічний сервіс пошуку зображень
 [ Pexels](https://www.pexels.com/api/documentation/). Зареєструйся та отримай
 приватний ключ доступу.
