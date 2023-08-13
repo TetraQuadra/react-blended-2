@@ -6,15 +6,13 @@ import { FormBtn, InputSearch, SearchFormStyled } from './SearchForm.styled';
 export class SearchForm extends Component {
   state = {
     inputValue: '',
-  }
+  };
 
-
-
-  onFormSubmit = (e) => {
+  onFormSubmit = e => {
     e.preventDefault();
-    const { onSubmit } = this.props
-    onSubmit(this.state.inputValue)
-  }
+    const { onSubmit } = this.props;
+    onSubmit(this.state.inputValue);
+  };
 
   render() {
     return (
@@ -23,21 +21,18 @@ export class SearchForm extends Component {
           <FiSearch size="16px" />
         </FormBtn>
         <InputSearch
-
           value={this.state.inputValue}
           placeholder="What do you want to write?"
           name="search"
           required
           autoFocus
-          onChange={(e) => this.setState({ inputValue: e.target.value })}
+          onChange={e => this.setState({ inputValue: e.target.value })}
         />
       </SearchFormStyled>
     );
   }
 }
 
-
-
 SearchForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
-}
+};
